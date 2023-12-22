@@ -6,20 +6,30 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=5
+config_version=4
 
 [application]
 
-config/name="N"
-run/main_scene="res://Scenes/Main.tscn"
-config/features=PackedStringArray("4.0", "GL Compatibility")
-config/icon="res://icon.svg"
+config/name="Share"
+run/main_scene="res://Scenes/Menu.tscn"
+config/icon="res://icon.png"
 
-[dotnet]
+[display]
 
-project/assembly_name="N"
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+window/size/test_width=640
+window/size/test_height=360
+window/dpi/allow_hidpi=true
+mouse_cursor/custom_image="res://Textures/image17.png"
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[physics]
+
+common/enable_pause_aware_picking=true
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+environment/default_environment="res://default_env.tres"

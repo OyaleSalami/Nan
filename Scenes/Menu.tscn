@@ -1,0 +1,347 @@
+[gd_scene load_steps=56 format=2]
+
+[ext_resource path="res://Models/Food Models/bag.glb" type="PackedScene" id=1]
+[ext_resource path="res://Models/Food Models/bread.glb" type="PackedScene" id=2]
+[ext_resource path="res://Models/Food Models/bowlSoup.glb" type="PackedScene" id=3]
+[ext_resource path="res://Models/Food Models/bottleKetchup.glb" type="PackedScene" id=4]
+[ext_resource path="res://Models/Food Models/broccoli.glb" type="PackedScene" id=5]
+[ext_resource path="res://Models/Food Models/burgerCheeseDouble.glb" type="PackedScene" id=6]
+[ext_resource path="res://Models/Food Models/cabbage.glb" type="PackedScene" id=7]
+[ext_resource path="res://Models/Food Models/cakeBirthday.glb" type="PackedScene" id=8]
+[ext_resource path="res://Models/Food Models/candyBar.glb" type="PackedScene" id=9]
+[ext_resource path="res://Models/Food Models/can.glb" type="PackedScene" id=10]
+[ext_resource path="res://Models/Food Models/candyBarWrapper.glb" type="PackedScene" id=11]
+[ext_resource path="res://Models/Food Models/carrot.glb" type="PackedScene" id=12]
+[ext_resource path="res://Models/Food Models/cauliflower.glb" type="PackedScene" id=13]
+[ext_resource path="res://Models/Food Models/cheese.glb" type="PackedScene" id=14]
+[ext_resource path="res://Models/Food Models/cherries.glb" type="PackedScene" id=15]
+[ext_resource path="res://Models/Food Models/chinese.glb" type="PackedScene" id=16]
+[ext_resource path="res://Models/Food Models/chocolate.glb" type="PackedScene" id=17]
+[ext_resource path="res://Models/Food Models/coconutHalf.glb" type="PackedScene" id=18]
+[ext_resource path="res://Models/Food Models/cocktail.glb" type="PackedScene" id=19]
+[ext_resource path="res://Models/Food Models/cookie.glb" type="PackedScene" id=20]
+[ext_resource path="res://Models/Food Models/corn.glb" type="PackedScene" id=21]
+[ext_resource path="res://Models/Food Models/cornDog.glb" type="PackedScene" id=22]
+[ext_resource path="res://Models/Food Models/cupcake.glb" type="PackedScene" id=23]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=24]
+[ext_resource path="res://Fonts/kenvector_future_thin.ttf" type="DynamicFontData" id=25]
+[ext_resource path="res://Models/Food Models/banana.glb" type="PackedScene" id=26]
+[ext_resource path="res://Models/Food Models/avocadoHalf.glb" type="PackedScene" id=27]
+[ext_resource path="res://Models/Food Models/avocado.glb" type="PackedScene" id=28]
+[ext_resource path="res://Models/Food Models/beet.glb" type="PackedScene" id=29]
+[ext_resource path="res://Models/Food Models/bowlCereal.glb" type="PackedScene" id=30]
+[ext_resource path="res://Models/Food Models/cake.glb" type="PackedScene" id=31]
+[ext_resource path="res://Models/Food Models/bowlBroth.glb" type="PackedScene" id=32]
+[ext_resource path="res://Models/Food Models/canSmall.glb" type="PackedScene" id=33]
+[ext_resource path="res://Models/Food Models/carton.glb" type="PackedScene" id=34]
+[ext_resource path="res://Models/Food Models/croissant.glb" type="PackedScene" id=35]
+[ext_resource path="res://Models/Food Models/canOpen.glb" type="PackedScene" id=36]
+[ext_resource path="res://Models/Food Models/celeryStick.glb" type="PackedScene" id=37]
+[ext_resource path="res://Models/Food Models/cheeseCut.glb" type="PackedScene" id=38]
+[ext_resource path="res://Models/Food Models/cookieChocolate.glb" type="PackedScene" id=39]
+[ext_resource path="res://Models/Food Models/bottleMusterd.glb" type="PackedScene" id=40]
+[ext_resource path="res://Models/Food Models/bottleOil.glb" type="PackedScene" id=41]
+[ext_resource path="res://Models/Food Models/burger.glb" type="PackedScene" id=42]
+[ext_resource path="res://Models/Food Models/cartonSmall.glb" type="PackedScene" id=43]
+[ext_resource path="res://Fonts/CherryBombOne-Regular.ttf" type="DynamicFontData" id=44]
+[ext_resource path="res://Icons/red_button02.png" type="Texture" id=45]
+[ext_resource path="res://Materials/Envvironment.tres" type="Environment" id=46]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 165
+outline_size = 10
+outline_color = Color( 0.952941, 0.470588, 0.156863, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_char = 10
+font_data = ExtResource( 44 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 45 )
+region_rect = Rect2( 0, 0, 190, 45 )
+modulate_color = Color( 1, 1, 1, 0.784314 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 45 )
+region_rect = Rect2( 0, 0, 190, 45 )
+modulate_color = Color( 1, 1, 1, 0.501961 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 45 )
+region_rect = Rect2( 0, 0, 190, 45 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 35
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 25 )
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 45 )
+region_rect = Rect2( 0, 0, 190, 45 )
+modulate_color = Color( 1, 1, 1, 0.501961 )
+
+[sub_resource type="SphereMesh" id=6]
+
+[node name="Menu" type="Spatial"]
+script = ExtResource( 24 )
+
+[node name="UI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="UI"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -202.0
+margin_bottom = -19.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="UI/Panel"]
+anchor_top = -0.333
+anchor_right = 1.0
+anchor_bottom = 1.077
+margin_top = -0.0610008
+margin_bottom = -0.0910034
+custom_fonts/font = SubResource( 2 )
+text = "NNN"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button Panel" type="Panel" parent="UI"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -91.2043
+margin_bottom = -20.2043
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play Button" type="Button" parent="UI/Button Panel"]
+anchor_left = 0.77
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.600037
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credit Button" type="Button" parent="UI/Button Panel"]
+anchor_right = 0.187
+anchor_bottom = 1.0
+margin_right = -0.360016
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
+text = "CREDITS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.1204, 4.91023 )
+environment = ExtResource( 46 )
+current = true
+fov = 65.0
+size = 20.0
+near = 0.01
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.801515, 0.597975, 0, -0.597975, 0.801515, 0, 16.3331, 2.9216 )
+
+[node name="Anchor" type="Spatial" parent="."]
+
+[node name="Sphere" type="MeshInstance" parent="Anchor"]
+transform = Transform( 9.99862, -0.161443, -0.0391246, 0.161133, 9.9984, -0.0782492, 0.0403816, 0.077608, 9.99962, 0, 0, -13.0147 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="bread" parent="Anchor/Sphere" instance=ExtResource( 2 )]
+transform = Transform( 0.0519197, -8.94069e-09, -0.396616, 0.143942, 0.372727, 0.018843, 0.369574, -0.14517, 0.0483797, -0.0518342, 0.957159, -0.25212 )
+
+[node name="bread2" parent="Anchor/Sphere" instance=ExtResource( 2 )]
+transform = Transform( 0.0500151, -0.194875, -0.34572, 0.0386349, 0.34919, -0.191242, 0.394976, -0.00947971, 0.0624844, -0.11088, 0.985174, -0.197695 )
+
+[node name="bowlSoup" parent="Anchor/Sphere" instance=ExtResource( 3 )]
+transform = Transform( 0.378217, 0.130201, 1.76121e-09, -0.117977, 0.342708, 0.169212, 0.0550788, -0.159997, 0.362446, 0.380076, 0.782754, -0.388729 )
+
+[node name="bottleKetchup" parent="Anchor/Sphere" instance=ExtResource( 4 )]
+transform = Transform( 0.377483, -0.00431756, -0.132241, 0.111913, -0.202848, 0.32608, -0.0705817, -0.344723, -0.190222, -0.679684, 0.648881, -0.330649 )
+
+[node name="broccoli" parent="Anchor/Sphere" instance=ExtResource( 5 )]
+transform = Transform( 0.4, 0, 0, 0, 0.0966061, 0.388159, 0, -0.388159, 0.0966061, -0.517235, 0.850356, 0.139444 )
+
+[node name="burgerCheeseDouble" parent="Anchor/Sphere" instance=ExtResource( 6 )]
+transform = Transform( 0.4, 0, 0, 0, 0.387045, -0.100976, 0, 0.100976, 0.387045, 0.0721679, 0.860159, 0.332796 )
+
+[node name="cabbage" parent="Anchor/Sphere" instance=ExtResource( 7 )]
+transform = Transform( 0.499575, 0.00641395, -0.0195905, -0.0192211, 0.316636, -0.386487, 0.00744833, 0.386912, 0.316613, -0.203331, 0.613798, 0.734573 )
+
+[node name="cakeBirthday" parent="Anchor/Sphere" instance=ExtResource( 8 )]
+transform = Transform( 0.259637, 0.272116, -0.136168, -0.303183, 0.246564, -0.0853608, 0.0258654, 0.158616, 0.366295, 0.555309, 0.642883, 0.464487 )
+
+[node name="candyBar" parent="Anchor/Sphere" instance=ExtResource( 9 )]
+transform = Transform( 0.387043, 0, -0.100983, 0, 0.4, 0, 0.100983, 0, 0.387043, -0.236105, 0.217863, 0.958278 )
+
+[node name="can" parent="Anchor/Sphere" instance=ExtResource( 10 )]
+transform = Transform( 0.149014, -0.326729, 0.176191, 0.32734, 0.205191, 0.103659, -0.175053, 0.105569, 0.343819, -0.805192, 0.446536, 0.236972 )
+
+[node name="candyBarWrapper" parent="Anchor/Sphere" instance=ExtResource( 11 )]
+transform = Transform( -0.0310669, 0.304746, -0.257225, -0.0122495, 0.257153, 0.306141, 0.398604, 0.0316543, -0.0106399, 0.652029, 0.737621, -0.0433263 )
+
+[node name="carrot" parent="Anchor/Sphere" instance=ExtResource( 12 )]
+transform = Transform( 0.383163, -0.114831, 0, 0.114831, 0.383163, 0, 0, 0, 0.4, 0.970226, 0.224024, 0.154878 )
+
+[node name="carrot2" parent="Anchor/Sphere" instance=ExtResource( 12 )]
+transform = Transform( 0.383163, -0.114831, 0, 0.108227, 0.361127, -0.133694, 0.0383803, 0.128066, 0.376996, 0.970226, 0.239427, 0.195682 )
+
+[node name="cauliflower" parent="Anchor/Sphere" instance=ExtResource( 13 )]
+transform = Transform( 0.4, 0, 0, 0, -0.0243915, -0.399256, 0, 0.399256, -0.0243915, 0.0541939, 0, 0.995731 )
+
+[node name="cheese" parent="Anchor/Sphere" instance=ExtResource( 14 )]
+transform = Transform( 0.305499, 0.171861, 0.192702, 0.144585, 0.133471, -0.348254, -0.213928, 0.335633, 0.0398169, 0.429, 0.267567, 0.815291 )
+
+[node name="cherries" parent="Anchor/Sphere" instance=ExtResource( 15 )]
+transform = Transform( 0.406467, 0.0562512, 0.911932, -0.442644, 0.885272, 0.142689, -0.799282, -0.461659, 0.384733, -0.537697, 0.263021, 0.818403 )
+
+[node name="chinese" parent="Anchor/Sphere" instance=ExtResource( 16 )]
+transform = Transform( 0.212397, -0.285067, 0.183369, 0.237156, -0.0296207, -0.320748, 0.242166, 0.279033, 0.153285, -0.691773, -0.173685, 0.608992 )
+
+[node name="chocolate" parent="Anchor/Sphere" instance=ExtResource( 17 )]
+transform = Transform( 0.00386527, 0.399643, -0.0164291, 0.277588, -0.0145093, -0.287635, -0.287975, -0.00862184, -0.277481, 0.996354, -0.104579, -0.0111365 )
+
+[node name="coconutHalf" parent="Anchor/Sphere" instance=ExtResource( 18 )]
+transform = Transform( -0.0480771, 0.354204, -0.179522, -0.378278, 0.0141621, 0.129248, 0.120807, 0.185307, 0.333267, 0.795379, 0, 0.574593 )
+
+[node name="coconutHalf2" parent="Anchor/Sphere" instance=ExtResource( 18 )]
+transform = Transform( -0.0974345, 0.232408, -0.310633, -0.378278, 0.0141621, 0.129248, 0.0860939, 0.325248, 0.216338, 0.760498, 0, 0.629882 )
+
+[node name="cocktail" parent="Anchor/Sphere" instance=ExtResource( 19 )]
+transform = Transform( -0.0451357, 0.356735, 0.175223, -0.396836, -0.0502095, 1.49636e-09, 0.0219946, -0.173837, 0.359579, 0.826349, 0, -0.543931 )
+
+[node name="cookie" parent="Anchor/Sphere" instance=ExtResource( 20 )]
+transform = Transform( 0.4, 0, 0, 0, -0.00869803, 0.399905, 0, -0.399905, -0.00869803, 0, 0, -1.0014 )
+
+[node name="cookie3" parent="Anchor/Sphere" instance=ExtResource( 20 )]
+transform = Transform( 0.4, 0, 0, 0, 0.188017, 0.353058, 0, -0.353058, 0.188017, -0.0326231, 0.0508131, -1.0014 )
+
+[node name="cookie2" parent="Anchor/Sphere" instance=ExtResource( 20 )]
+transform = Transform( 0.216537, -0.149195, -0.301418, 0.323631, -0.00511184, 0.235025, -0.0915131, -0.371099, 0.117943, -0.0557811, 0, -1.0014 )
+
+[node name="corn" parent="Anchor/Sphere" instance=ExtResource( 21 )]
+transform = Transform( 0.399988, -0.00152242, -0.00273997, 0.000431418, 0.373062, -0.144306, 0.00310469, 0.144299, 0.373053, -0.0764248, 0.349385, -0.919269 )
+
+[node name="cornDog" parent="Anchor/Sphere" instance=ExtResource( 22 )]
+transform = Transform( -0.0494092, -0.384869, -0.0971321, 0.396935, -0.0475955, -0.0133244, 0.0012628, -0.0980336, 0.387799, -0.922579, 0, -0.364112 )
+
+[node name="cornDog2" parent="Anchor/Sphere" instance=ExtResource( 22 )]
+transform = Transform( -0.0672758, -0.375569, 0.120091, 0.324725, -0.121879, -0.199247, 0.223669, 0.0639803, 0.32539, -0.927104, -0.0146526, -0.309416 )
+
+[node name="cupcake" parent="Anchor/Sphere" instance=ExtResource( 23 )]
+transform = Transform( 0.0504119, -0.198269, -0.343727, 0.386543, 0.102848, -0.00263361, 0.0896847, -0.331831, 0.20456, -0.524266, 0.190267, -0.814951 )
+
+[node name="bag" parent="Anchor/Sphere" instance=ExtResource( 1 )]
+transform = Transform( -0.2001, -0.0498868, -0.342741, -0.096762, 0.38812, 2.89172e-09, 0.332562, 0.0829108, -0.206225, 0.477093, 0.192821, -0.870208 )
+
+[node name="banana" parent="Anchor/Sphere" instance=ExtResource( 26 )]
+transform = Transform( 0.322069, 0.132511, 0.196754, 0.089032, 0.239994, -0.30737, -0.219874, 0.291279, 0.163743, 0.859197, 0.301876, -0.436845 )
+
+[node name="banana2" parent="Anchor/Sphere" instance=ExtResource( 26 )]
+transform = Transform( 0.322099, -0.0251038, 0.235843, 0.143456, 0.337367, -0.160013, -0.188871, 0.213433, 0.280667, 0.890305, 0.323412, -0.382558 )
+
+[node name="avocadoHalf" parent="Anchor/Sphere" instance=ExtResource( 27 )]
+transform = Transform( 0.377245, 2.98023e-09, 0.13299, 0.0304971, 0.38934, -0.0865096, -0.129446, 0.0917277, 0.367192, -0.970248, -0.00265892, 0.293195 )
+
+[node name="avocado" parent="Anchor/Sphere" instance=ExtResource( 28 )]
+transform = Transform( -0.300377, 0, -0.264147, 0, 0.4, 0, 0.264147, 0, -0.300377, -0.985822, -0.00404326, 0.232828 )
+
+[node name="beet" parent="Anchor/Sphere" instance=ExtResource( 29 )]
+transform = Transform( -0.4, -6.03983e-08, 0, 6.03983e-08, -0.4, 0, 0, 0, 0.4, -0.0229489, -0.979499, -0.0526186 )
+
+[node name="bowlCereal" parent="Anchor/Sphere" instance=ExtResource( 30 )]
+transform = Transform( -0.335472, -0.21785, 0, 0.21785, -0.335472, 0, 0, 0, 0.4, -0.459154, -0.844165, -0.0653542 )
+
+[node name="cake" parent="Anchor/Sphere" instance=ExtResource( 31 )]
+transform = Transform( -0.1, -8.74228e-09, 0, 8.74228e-09, -0.1, 0, 0, 0, 0.1, -0.0169491, -0.708792, -0.580303 )
+
+[node name="bowlBroth" parent="Anchor/Sphere" instance=ExtResource( 32 )]
+transform = Transform( -0.4, -4.85486e-08, 2.58463e-08, 5.49032e-08, -0.363607, 0.166703, 3.26185e-09, 0.166703, 0.363607, 0.171605, -0.846425, 0.460055 )
+
+[node name="canSmall" parent="Anchor/Sphere" instance=ExtResource( 33 )]
+transform = Transform( 0.380189, 0.124324, 3.30504e-08, 0.117502, -0.359329, 0.130676, 0.0406153, -0.124204, -0.378053, 0.328215, -0.792971, -0.466422 )
+
+[node name="carton" parent="Anchor/Sphere" instance=ExtResource( 34 )]
+transform = Transform( 0.4, 0, 0, 0, -0.196805, -0.348235, 0, 0.348235, -0.196805, -0.206361, -0.377412, 0.810454 )
+
+[node name="cartonSmall" parent="Anchor/Sphere" instance=ExtResource( 43 )]
+transform = Transform( -0.208648, -0.273924, 0.203547, 0.33382, -0.213399, 0.0550014, 0.0709267, 0.19856, 0.339917, -0.514068, -0.728464, 0.414963 )
+
+[node name="celeryStick" parent="Anchor/Sphere" instance=ExtResource( 37 )]
+transform = Transform( -0.4, -5.39347e-08, 5.34739e-08, 7.24185e-08, -0.185968, 0.354141, -2.28902e-08, 0.354141, 0.185968, -0.368853, -0.732601, -0.604514 )
+
+[node name="celeryStick2" parent="Anchor/Sphere" instance=ExtResource( 37 )]
+transform = Transform( -0.387386, 0.0993153, 0.00826299, -0.0463331, -0.208846, 0.337989, 0.0882329, 0.326374, 0.213764, -0.368853, -0.732601, -0.604514 )
+
+[node name="celeryStick3" parent="Anchor/Sphere" instance=ExtResource( 37 )]
+transform = Transform( 0.235907, 0.00369368, 0.323008, 0.271148, -0.219661, -0.195519, 0.175576, 0.334268, -0.132053, -0.401319, -0.712912, -0.583559 )
+
+[node name="cheeseCut" parent="Anchor/Sphere" instance=ExtResource( 38 )]
+transform = Transform( -0.157466, -0.361571, -0.0668675, 0.367531, -0.156987, -0.0166211, -0.0112191, -0.0679828, 0.394021, -0.848447, -0.465427, -0.262786 )
+
+[node name="cookieChocolate" parent="Anchor/Sphere" instance=ExtResource( 39 )]
+transform = Transform( 0.367064, -0.158302, -0.0143023, -0.0398635, -0.126528, 0.377361, -0.153866, -0.344864, -0.131886, -0.569703, -0.343027, -0.737845 )
+
+[node name="cookieChocolate3" parent="Anchor/Sphere" instance=ExtResource( 39 )]
+transform = Transform( 0.367064, -0.154445, 0.0375594, -0.0398634, 0.0020484, 0.398003, -0.153866, -0.368975, -0.013512, -0.558443, -0.310808, -0.768632 )
+
+[node name="cookieChocolate2" parent="Anchor/Sphere" instance=ExtResource( 39 )]
+transform = Transform( 0.38318, -0.11388, -0.0143023, -0.0246539, -0.130348, 0.377361, -0.112095, -0.360612, -0.131886, -0.54271, -0.349918, -0.760489 )
+
+[node name="croissant" parent="Anchor/Sphere" instance=ExtResource( 35 )]
+transform = Transform( -0.4, -5.68948e-08, -3.31547e-08, 4.95232e-08, -0.127173, -0.379245, 4.34017e-08, -0.379245, 0.127173, 0.347474, -0.318524, -0.872243 )
+
+[node name="croissant2" parent="Anchor/Sphere" instance=ExtResource( 35 )]
+transform = Transform( -0.113526, -0.0957615, 0.371405, -0.36365, -0.0962726, -0.135978, 0.121944, -0.376246, -0.0597356, 0.255181, -0.311598, -0.937511 )
+
+[node name="bottleMusterd" parent="Anchor/Sphere" instance=ExtResource( 40 )]
+transform = Transform( -0.232946, -0.174192, 0.274578, 5.10011e-08, -0.337765, -0.214278, 0.325171, -0.124788, 0.196702, 0.609918, -0.402214, 0.715831 )
+
+[node name="bottleOil" parent="Anchor/Sphere" instance=ExtResource( 41 )]
+transform = Transform( -0.383702, -0.113017, 0, 0.113017, -0.383702, 0, 0, 0, 0.4, 0.833524, -0.322746, -0.470503 )
+
+[node name="canOpen" parent="Anchor/Sphere" instance=ExtResource( 36 )]
+transform = Transform( -0.176533, 0.358937, 0, -0.358937, -0.176533, 0, 0, 0, 0.4, 0.79591, -0.549357, 0.062827 )
+
+[node name="burger" parent="Anchor/Sphere" instance=ExtResource( 42 )]
+transform = Transform( 0.4, 0, 0, 0, -0.203845, 0.344162, 0, -0.344162, -0.203845, -0.13311, -0.577611, -0.76834 )
+
+[node name="burgerCheeseDouble2" parent="Anchor/Sphere" instance=ExtResource( 6 )]
+transform = Transform( -0.331954, 0.223173, 0, -0.223173, -0.331954, 0, 0, 0, 0.4, 0.495768, -0.833937, -0.076357 )
+
+[connection signal="button_up" from="UI/Button Panel/Play Button" to="." method="_on_play_button_up"]
+[connection signal="button_up" from="UI/Button Panel/Credit Button" to="." method="_on_credit_button_up"]
