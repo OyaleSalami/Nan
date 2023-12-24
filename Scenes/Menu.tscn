@@ -62,35 +62,38 @@ font_data = ExtResource( 44 )
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="StyleBoxTexture" id=8]
+[sub_resource type="StyleBoxTexture" id=4]
 texture = ExtResource( 45 )
 region_rect = Rect2( 0, 0, 190, 45 )
 modulate_color = Color( 1, 1, 1, 0.784314 )
 
-[sub_resource type="StyleBoxTexture" id=9]
+[sub_resource type="StyleBoxTexture" id=5]
 texture = ExtResource( 45 )
 region_rect = Rect2( 0, 0, 190, 45 )
 modulate_color = Color( 1, 1, 1, 0.501961 )
 
-[sub_resource type="StyleBoxTexture" id=7]
+[sub_resource type="StyleBoxTexture" id=6]
 texture = ExtResource( 45 )
 region_rect = Rect2( 0, 0, 190, 45 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=7]
 size = 35
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 25 )
 
-[sub_resource type="StyleBoxTexture" id=10]
+[sub_resource type="StyleBoxTexture" id=8]
 texture = ExtResource( 45 )
 region_rect = Rect2( 0, 0, 190, 45 )
 modulate_color = Color( 1, 1, 1, 0.501961 )
 
-[sub_resource type="SphereMesh" id=6]
+[sub_resource type="SphereMesh" id=9]
 
 [node name="Menu" type="Spatial"]
 script = ExtResource( 24 )
+__meta__ = {
+"_edit_vertical_guides_": [ 134.0 ]
+}
 
 [node name="UI" type="Control" parent="."]
 anchor_right = 1.0
@@ -117,7 +120,7 @@ anchor_bottom = 1.077
 margin_top = -0.0610008
 margin_bottom = -0.0910034
 custom_fonts/font = SubResource( 2 )
-text = "NNN"
+text = "NAN"
 align = 1
 valign = 1
 uppercase = true
@@ -141,10 +144,10 @@ anchor_left = 0.77
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -0.600037
-custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 9 )
-custom_styles/normal = SubResource( 7 )
-custom_fonts/font = SubResource( 4 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
 text = "PLAY"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -154,10 +157,10 @@ __meta__ = {
 anchor_right = 0.187
 anchor_bottom = 1.0
 margin_right = -0.360016
-custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/normal = SubResource( 7 )
-custom_fonts/font = SubResource( 4 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
 text = "CREDITS"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -178,7 +181,7 @@ transform = Transform( 1, 0, 0, 0, 0.801515, 0.597975, 0, -0.597975, 0.801515, 0
 
 [node name="Sphere" type="MeshInstance" parent="Anchor"]
 transform = Transform( 9.99862, -0.161443, -0.0391246, 0.161133, 9.9984, -0.0782492, 0.0403816, 0.077608, 9.99962, 0, 0, -13.0147 )
-mesh = SubResource( 6 )
+mesh = SubResource( 9 )
 material/0 = null
 
 [node name="bread" parent="Anchor/Sphere" instance=ExtResource( 2 )]
@@ -293,7 +296,7 @@ transform = Transform( -0.1, -8.74228e-09, 0, 8.74228e-09, -0.1, 0, 0, 0, 0.1, -
 transform = Transform( -0.4, -4.85486e-08, 2.58463e-08, 5.49032e-08, -0.363607, 0.166703, 3.26185e-09, 0.166703, 0.363607, 0.171605, -0.846425, 0.460055 )
 
 [node name="canSmall" parent="Anchor/Sphere" instance=ExtResource( 33 )]
-transform = Transform( 0.380189, 0.124324, 3.30504e-08, 0.117502, -0.359329, 0.130676, 0.0406153, -0.124204, -0.378053, 0.328215, -0.792971, -0.466422 )
+transform = Transform( 0.380189, 0.124324, 3.28291e-08, 0.117502, -0.359329, 0.130676, 0.0406153, -0.124204, -0.378053, 0.328215, -0.792971, -0.466422 )
 
 [node name="carton" parent="Anchor/Sphere" instance=ExtResource( 34 )]
 transform = Transform( 0.4, 0, 0, 0, -0.196805, -0.348235, 0, 0.348235, -0.196805, -0.206361, -0.377412, 0.810454 )

@@ -23,10 +23,7 @@ func _input(event):
 		yRotSpeed = event.relative.y
 
 func _on_play_button_up():
-	print("Change Scene!")
-	#get_tree().change_scene("")
-	pass # Replace with function body.
-
+	get_tree().change_scene("res://Scenes/Share.tscn")
 
 func _on_credit_button_up():
 	get_tree().change_scene("res://Scenes/Credits.tscn")

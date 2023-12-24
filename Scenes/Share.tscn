@@ -1,34 +1,1146 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=83 format=2]
 
-[ext_resource path="res://Materials/Envvironment.tres" type="Environment" id=1]
+[ext_resource path="res://Icons/grey_panel.png" type="Texture" id=1]
 [ext_resource path="res://Models/Food Models/bowl.glb" type="PackedScene" id=2]
+[ext_resource path="res://Models/Food Models/apple.glb" type="PackedScene" id=3]
+[ext_resource path="res://Models/Furniture Models/trashcan.glb" type="PackedScene" id=4]
+[ext_resource path="res://Models/Furniture Models/kitchenCabinet.glb" type="PackedScene" id=5]
+[ext_resource path="res://Models/Furniture Models/kitchenCabinetCornerRound.glb" type="PackedScene" id=6]
+[ext_resource path="res://Models/Furniture Models/kitchenCabinetUpperCorner.glb" type="PackedScene" id=7]
+[ext_resource path="res://Models/Furniture Models/metalDark.material" type="Material" id=8]
+[ext_resource path="res://Models/Furniture Models/metal.material" type="Material" id=9]
+[ext_resource path="res://Models/Furniture Models/kitchenBar.glb" type="PackedScene" id=10]
+[ext_resource path="res://Models/Furniture Models/kitchenCabinetCornerInner.glb" type="PackedScene" id=11]
+[ext_resource path="res://Models/Furniture Models/kitchenCabinetUpperDouble.glb" type="PackedScene" id=12]
+[ext_resource path="res://Models/Food Models/bottleOil.glb" type="PackedScene" id=13]
+[ext_resource path="res://Models/Food Models/banana.glb" type="PackedScene" id=14]
+[ext_resource path="res://Models/Food Models/bottleKetchup.glb" type="PackedScene" id=15]
+[ext_resource path="res://Models/Food Models/bottleMusterd.glb" type="PackedScene" id=16]
+[ext_resource path="res://Models/Food Models/canOpen.glb" type="PackedScene" id=17]
+[ext_resource path="res://Models/Food Models/can.glb" type="PackedScene" id=18]
+[ext_resource path="res://Models/Food Models/croissant.glb" type="PackedScene" id=19]
+[ext_resource path="res://Models/Food Models/cherries.glb" type="PackedScene" id=20]
+[ext_resource path="res://Models/Food Models/fries.glb" type="PackedScene" id=21]
+[ext_resource path="res://Fonts/kenvector_future_thin.ttf" type="DynamicFontData" id=22]
+[ext_resource path="res://Icons/grey_checkmarkWhite.png" type="Texture" id=23]
+[ext_resource path="res://Icons/red_button02.png" type="Texture" id=24]
+[ext_resource path="res://Icons/red_boxCross.png" type="Texture" id=25]
+[ext_resource path="res://Scripts/InGameUI.gd" type="Script" id=26]
+[ext_resource path="res://Icons/grey_sliderRight.png" type="Texture" id=27]
+[ext_resource path="res://Models/Food Models/broccoli.glb" type="PackedScene" id=28]
+[ext_resource path="res://Models/Food Models/cabbage.glb" type="PackedScene" id=29]
+[ext_resource path="res://Models/Food Models/carrot.glb" type="PackedScene" id=30]
+[ext_resource path="res://Models/Food Models/watermelon.glb" type="PackedScene" id=31]
+[ext_resource path="res://Models/Food Models/tajine.glb" type="PackedScene" id=32]
+[ext_resource path="res://Models/Food Models/wineRed.glb" type="PackedScene" id=33]
+[ext_resource path="res://Models/Food Models/wineWhite.glb" type="PackedScene" id=34]
+[ext_resource path="res://Models/Food Models/makiRoe.glb" type="PackedScene" id=35]
+[ext_resource path="res://Models/Food Models/honey.glb" type="PackedScene" id=36]
+[ext_resource path="res://Icons/green_boxCheckmark.png" type="Texture" id=37]
+[ext_resource path="res://Models/Food Models/styrofoam.glb" type="PackedScene" id=38]
+[ext_resource path="res://Textures/Fruits/coconutHalf.png" type="Texture" id=39]
+[ext_resource path="res://Icons/grey_button02.png" type="Texture" id=40]
+[ext_resource path="res://Textures/Fruits/appleHalf.png" type="Texture" id=41]
+[ext_resource path="res://Textures/Fruits/cherries.png" type="Texture" id=42]
+[ext_resource path="res://Textures/Fruits/avocadoHalf.png" type="Texture" id=43]
+[ext_resource path="res://Textures/Fruits/orange.png" type="Texture" id=44]
+[ext_resource path="res://Textures/Fruits/pearHalf.png" type="Texture" id=45]
+[ext_resource path="res://Textures/Fruits/pineapple.png" type="Texture" id=46]
+[ext_resource path="res://Textures/Fruits/strawberry.png" type="Texture" id=47]
+[ext_resource path="res://Textures/Fruits/watermelon.png" type="Texture" id=48]
+[ext_resource path="res://Textures/Meat/bacon.png" type="Texture" id=49]
+[ext_resource path="res://Textures/Meat/fish.png" type="Texture" id=50]
+[ext_resource path="res://Textures/Meat/meatSausage.png" type="Texture" id=51]
+[ext_resource path="res://Textures/Meat/turkey.png" type="Texture" id=52]
+[ext_resource path="res://Textures/Meat/wholerHam.png" type="Texture" id=53]
+[ext_resource path="res://Textures/Meat/skewer.png" type="Texture" id=54]
+[ext_resource path="res://Textures/Drinks/sodaBottle.png" type="Texture" id=55]
+[ext_resource path="res://Textures/Drinks/sodaCan.png" type="Texture" id=56]
+[ext_resource path="res://Textures/Drinks/wineWhite.png" type="Texture" id=57]
+[ext_resource path="res://Textures/Drinks/wineRed.png" type="Texture" id=58]
+[ext_resource path="res://Textures/Drinks/carton.png" type="Texture" id=59]
+[ext_resource path="res://Textures/Vegetables/beet.png" type="Texture" id=60]
+[ext_resource path="res://Textures/Vegetables/broccoli.png" type="Texture" id=61]
+[ext_resource path="res://Textures/Vegetables/cabbage.png" type="Texture" id=62]
+[ext_resource path="res://Textures/Vegetables/cauliflower.png" type="Texture" id=63]
+[ext_resource path="res://Textures/Vegetables/carrot.png" type="Texture" id=64]
+[ext_resource path="res://Icons/forward.png" type="Texture" id=65]
+[ext_resource path="res://Icons/backward.png" type="Texture" id=66]
+[ext_resource path="res://Scripts/Foods Panel.gd" type="Script" id=67]
+[ext_resource path="res://Scripts/Gameplay.gd" type="Script" id=68]
+[ext_resource path="res://Scripts/Box.gd" type="Script" id=69]
 
-[sub_resource type="CubeMesh" id=1]
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 100, 100 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 190, 45 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 23 )
+region_rect = Rect2( 0, 0, 21, 20 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 12
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 22 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.933333, 0.447059, 0.12549, 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 25
+use_mipmaps = true
+font_data = ExtResource( 22 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 40 )
+region_rect = Rect2( 0, 0, 190, 45 )
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 22 )
+
+[sub_resource type="Environment" id=11]
+background_mode = 1
+background_color = Color( 0.501961, 0.392157, 0.25098, 1 )
+ambient_light_color = Color( 0.501961, 0.392157, 0.25098, 1 )
+tonemap_exposure = 0.5
+ssao_enabled = true
+adjustment_enabled = true
+adjustment_saturation = 0.75
+
+[sub_resource type="CubeMesh" id=12]
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 0.387491, 0.0708862, 0.381693 )
 
 [node name="Spatial" type="Spatial"]
+script = ExtResource( 68 )
 
-[node name="Ground" type="MeshInstance" parent="."]
-transform = Transform( 5, 0, 0, 0, 0.2, 0, 0, 0, 5, 0, 0, 0 )
-use_in_baked_light = true
-mesh = SubResource( 1 )
-material/0 = null
+[node name="UI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 26 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Open Requirements" type="Button" parent="UI"]
+anchor_left = 0.011
+anchor_top = 0.018
+anchor_right = 0.051
+anchor_bottom = 0.069
+margin_left = -0.0800009
+margin_top = 0.039999
+margin_right = -12.28
+margin_bottom = 0.319996
+icon = ExtResource( 27 )
+flat = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Requirements Panel" type="Panel" parent="UI"]
+anchor_left = 0.011
+anchor_top = 0.018
+anchor_right = 0.247
+anchor_bottom = 0.368
+margin_left = -0.22087
+margin_top = 0.039999
+margin_right = -0.300873
+margin_bottom = 0.039978
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="1" type="Panel" parent="UI/Requirements Panel"]
+margin_left = 8.0
+margin_top = 11.0
+margin_right = 293.0
+margin_bottom = 53.0
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check Image" type="Panel" parent="UI/Requirements Panel/1"]
+visible = false
+anchor_top = 0.262
+anchor_right = 0.077
+anchor_bottom = 0.738
+margin_left = 10.8546
+margin_top = -0.47594
+margin_right = 10.9096
+margin_bottom = -0.467941
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="UI/Requirements Panel/1"]
+anchor_left = 0.126
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0900002
+custom_fonts/font = SubResource( 4 )
+text = "Every Box Should Have A Drink"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="Panel" parent="UI/Requirements Panel"]
+margin_left = 7.52806
+margin_top = 56.3289
+margin_right = 292.528
+margin_bottom = 98.3289
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check Image" type="Panel" parent="UI/Requirements Panel/2"]
+visible = false
+anchor_top = 0.262
+anchor_right = 0.077
+anchor_bottom = 0.738
+margin_left = 10.8546
+margin_top = -0.47594
+margin_right = 10.9096
+margin_bottom = -0.467941
+custom_styles/panel = SubResource( 3 )
+
+[node name="Label" type="Label" parent="UI/Requirements Panel/2"]
+anchor_left = 0.126
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0900002
+custom_fonts/font = SubResource( 4 )
+text = "2 Boxes Should Have Fruit"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="Panel" parent="UI/Requirements Panel"]
+margin_left = 7.52806
+margin_top = 101.658
+margin_right = 292.528
+margin_bottom = 143.658
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check Image" type="Panel" parent="UI/Requirements Panel/3"]
+visible = false
+anchor_top = 0.262
+anchor_right = 0.077
+anchor_bottom = 0.738
+margin_left = 10.8546
+margin_top = -0.47594
+margin_right = 10.9096
+margin_bottom = -0.467941
+custom_styles/panel = SubResource( 3 )
+
+[node name="Label" type="Label" parent="UI/Requirements Panel/3"]
+anchor_left = 0.126
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.702812
+margin_top = 5.34201
+margin_right = -1.38718
+margin_bottom = 5.34201
+custom_fonts/font = SubResource( 4 )
+text = "Every Box That Doesn't Have Fruit Should Have Cake"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Panel" parent="UI/Requirements Panel"]
+margin_left = 8.52806
+margin_top = 147.658
+margin_right = 293.528
+margin_bottom = 189.658
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check Image" type="Panel" parent="UI/Requirements Panel/4"]
+visible = false
+anchor_top = 0.262
+anchor_right = 0.077
+anchor_bottom = 0.738
+margin_left = 10.8546
+margin_top = -0.47594
+margin_right = 10.9096
+margin_bottom = -0.467941
+custom_styles/panel = SubResource( 3 )
+
+[node name="Label" type="Label" parent="UI/Requirements Panel/4"]
+anchor_left = 0.126
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0900002
+margin_right = -2.0
+custom_fonts/font = SubResource( 4 )
+text = "3 Boxes Should Have Vegetables"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="Panel" parent="UI/Requirements Panel"]
+margin_left = 8.52806
+margin_top = 195.658
+margin_right = 293.528
+margin_bottom = 237.658
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check Image" type="Panel" parent="UI/Requirements Panel/5"]
+visible = false
+anchor_top = 0.262
+anchor_right = 0.077
+anchor_bottom = 0.738
+margin_left = 10.8546
+margin_top = -0.47594
+margin_right = 10.9096
+margin_bottom = -0.467941
+custom_styles/panel = SubResource( 3 )
+
+[node name="Label" type="Label" parent="UI/Requirements Panel/5"]
+anchor_left = 0.126
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0900002
+margin_right = -2.0
+custom_fonts/font = SubResource( 4 )
+text = "Every Box That Has A Vegetable And A Cake Should Not Have A Cookie"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close Requirements" type="Button" parent="UI/Requirements Panel"]
+margin_left = 301.141
+margin_right = 351.141
+margin_bottom = 42.0
+icon = ExtResource( 25 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Submit Button" type="Button" parent="UI"]
+anchor_left = 0.017
+anchor_top = 0.875
+anchor_right = 0.075
+anchor_bottom = 0.977
+margin_left = 0.160316
+margin_top = -0.263489
+margin_right = -0.0796814
+margin_bottom = 0.296509
+icon = ExtResource( 37 )
+flat = true
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Foods Panel" type="Panel" parent="UI"]
+anchor_left = 0.842
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.239868
+custom_styles/panel = SubResource( 5 )
+script = ExtResource( 67 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Forward" type="Button" parent="UI/Foods Panel"]
+anchor_left = -0.303
+anchor_top = 0.082
+anchor_right = 0.004
+anchor_bottom = 0.16
+margin_left = 0.0318451
+margin_top = -0.110741
+margin_right = 0.0178052
+margin_bottom = -0.270744
+icon = ExtResource( 65 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="UI/Foods Panel"]
+anchor_left = -0.308
+anchor_top = 0.002
+anchor_bottom = 0.078
+margin_left = -0.0805893
+margin_top = -0.317533
+margin_right = -0.296631
+margin_bottom = 0.962467
+icon = ExtResource( 66 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fruit Panel" type="Panel" parent="UI/Foods Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="UI/Foods Panel/Fruit Panel"]
+anchor_right = 1.0
+margin_right = -0.00012207
+margin_bottom = 34.0
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Fruits"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="UI/Foods Panel/Fruit Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_right = -0.00012207
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coconut" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.498291
+margin_top = 12.3746
+margin_right = -0.498291
+margin_bottom = 52.3746
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Coconut"
+icon = ExtResource( 39 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Apple" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.310425
+margin_top = 62.4538
+margin_right = -0.310425
+margin_bottom = 102.454
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Apple"
+icon = ExtResource( 41 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cherry" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.685058
+margin_top = 114.145
+margin_right = -0.685059
+margin_bottom = 154.145
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Cherry"
+icon = ExtResource( 42 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Avocado" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.438721
+margin_top = 164.339
+margin_right = 0.438721
+margin_bottom = 204.339
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Avocado"
+icon = ExtResource( 43 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Orange" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.813233
+margin_top = 216.779
+margin_right = 0.813232
+margin_bottom = 256.779
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Orange"
+icon = ExtResource( 44 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pear" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.813233
+margin_top = 270.096
+margin_right = 0.813232
+margin_bottom = 310.096
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Pear"
+icon = ExtResource( 45 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pineapple" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.0777586
+margin_top = 326.223
+margin_right = -0.0777588
+margin_bottom = 366.223
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Pineapple"
+icon = ExtResource( 46 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Strawberry" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.638916
+margin_top = 381.785
+margin_right = -0.638916
+margin_bottom = 421.785
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Strawberry"
+icon = ExtResource( 47 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Watermelon" type="Button" parent="UI/Foods Panel/Fruit Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.638916
+margin_top = 437.911
+margin_right = -0.638916
+margin_bottom = 477.911
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Watermelon"
+icon = ExtResource( 48 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vegetable Panel" type="Panel" parent="UI/Foods Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="UI/Foods Panel/Vegetable Panel"]
+anchor_right = 1.0
+margin_right = -0.00012207
+margin_bottom = 38.0
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Vegetables"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="UI/Foods Panel/Vegetable Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_right = -0.00012207
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Beet" type="Button" parent="UI/Foods Panel/Vegetable Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.498291
+margin_top = 12.3746
+margin_right = -0.498291
+margin_bottom = 52.3746
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Beet"
+icon = ExtResource( 60 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Broccoli" type="Button" parent="UI/Foods Panel/Vegetable Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.310425
+margin_top = 62.4538
+margin_right = -0.310425
+margin_bottom = 102.454
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Broccoli"
+icon = ExtResource( 61 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cabbage" type="Button" parent="UI/Foods Panel/Vegetable Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.685058
+margin_top = 114.145
+margin_right = -0.685059
+margin_bottom = 154.145
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Cabbage"
+icon = ExtResource( 62 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cauliflower" type="Button" parent="UI/Foods Panel/Vegetable Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.438721
+margin_top = 164.339
+margin_right = 0.438721
+margin_bottom = 204.339
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Cauliflower"
+icon = ExtResource( 63 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Carrot" type="Button" parent="UI/Foods Panel/Vegetable Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.813233
+margin_top = 216.779
+margin_right = 0.813232
+margin_bottom = 256.779
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "CArrot"
+icon = ExtResource( 64 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Meat Panel" type="Panel" parent="UI/Foods Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="UI/Foods Panel/Meat Panel"]
+anchor_right = 1.0
+margin_right = -0.00012207
+margin_bottom = 34.0
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Meat"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="UI/Foods Panel/Meat Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_right = -0.00012207
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bacon" type="Button" parent="UI/Foods Panel/Meat Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.498291
+margin_top = 12.3746
+margin_right = -0.498291
+margin_bottom = 52.3746
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Bacon"
+icon = ExtResource( 49 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fish" type="Button" parent="UI/Foods Panel/Meat Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.310425
+margin_top = 62.4538
+margin_right = -0.310425
+margin_bottom = 102.454
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Fish"
+icon = ExtResource( 50 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sausage" type="Button" parent="UI/Foods Panel/Meat Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.685058
+margin_top = 114.145
+margin_right = -0.685059
+margin_bottom = 154.145
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Sausage"
+icon = ExtResource( 51 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Turkey" type="Button" parent="UI/Foods Panel/Meat Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.438721
+margin_top = 164.339
+margin_right = 0.438721
+margin_bottom = 204.339
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Turkey"
+icon = ExtResource( 52 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Drumstick" type="Button" parent="UI/Foods Panel/Meat Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.813233
+margin_top = 216.779
+margin_right = 0.813232
+margin_bottom = 256.779
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Drumstick"
+icon = ExtResource( 53 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skewer" type="Button" parent="UI/Foods Panel/Meat Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.813233
+margin_top = 270.096
+margin_right = 0.813232
+margin_bottom = 310.096
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Skewer"
+icon = ExtResource( 54 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Drinks Panel" type="Panel" parent="UI/Foods Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="UI/Foods Panel/Drinks Panel"]
+anchor_right = 1.0
+margin_right = -0.00012207
+margin_bottom = 34.0
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Drinks"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="UI/Foods Panel/Drinks Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 36.0
+margin_right = -0.00012207
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Soda" type="Button" parent="UI/Foods Panel/Drinks Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.498291
+margin_top = 12.3746
+margin_right = -0.498291
+margin_bottom = 52.3746
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Soda"
+icon = ExtResource( 55 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Malt" type="Button" parent="UI/Foods Panel/Drinks Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.310425
+margin_top = 62.4538
+margin_right = -0.310425
+margin_bottom = 102.454
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Malt"
+icon = ExtResource( 56 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Milk" type="Button" parent="UI/Foods Panel/Drinks Panel/Control"]
+anchor_right = 1.0
+margin_left = -0.685058
+margin_top = 114.145
+margin_right = -0.685059
+margin_bottom = 154.145
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Milk"
+icon = ExtResource( 59 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Red Wine" type="Button" parent="UI/Foods Panel/Drinks Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.438721
+margin_top = 164.339
+margin_right = 0.438721
+margin_bottom = 204.339
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "Red Wine"
+icon = ExtResource( 58 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="White Wine" type="Button" parent="UI/Foods Panel/Drinks Panel/Control"]
+anchor_right = 1.0
+margin_left = 0.813233
+margin_top = 216.779
+margin_right = 0.813232
+margin_bottom = 256.779
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.960784, 0.478431, 0.164706, 1 )
+text = "White Wine"
+icon = ExtResource( 57 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 7.44085, 0 )
-environment = ExtResource( 1 )
+transform = Transform( 1, 0, 0, 0, 0.966416, 0.256981, 0, -0.256981, 0.966416, -1.70746, 3.70081, 4.26468 )
+environment = SubResource( 11 )
 current = true
+fov = 85.0
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.884532, 0.466479, 0, -0.466479, 0.884532, 0, 13.5353, 5.65986 )
+transform = Transform( 1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, -25.6664, 32.9636, 1.19209e-07 )
+light_color = Color( 1, 0.784314, 0.501961, 1 )
+light_energy = 2.0
+directional_shadow_blend_splits = true
 
-[node name="bowl" parent="." instance=ExtResource( 2 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -2.85278, 0.0921702, 2.40199 )
+[node name="Ground" type="MeshInstance" parent="."]
+transform = Transform( 16.5395, 0, 0, 0, 0.2, 0, 0, 0, 17.6025, 0, 0, 0 )
+use_in_baked_light = true
+mesh = SubResource( 12 )
+material/0 = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="bowl2" parent="." instance=ExtResource( 2 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -2.85278, 0.0921702, -1.54793 )
+[node name="Kitchen Desk" type="Spatial" parent="."]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
-[node name="bowl3" parent="." instance=ExtResource( 2 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0.626213, 0.0921702, -1.54793 )
+[node name="Table" type="MeshInstance" parent="Kitchen Desk"]
+transform = Transform( 2.357, 0, 0, 0, 0.0730502, 0, 0, 0, 1.09398, -0.784521, 2.02801, 1.25183 )
+use_in_baked_light = true
+mesh = SubResource( 12 )
+material/0 = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="bowl4" parent="." instance=ExtResource( 2 )]
-transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0.626213, 0.0921702, 2.53614 )
+[node name="trashcan" parent="Kitchen Desk" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -2.6155, 0.224356, 1.8299 )
+
+[node name="kitchenCabinet" parent="Kitchen Desk" instance=ExtResource( 5 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -5.19269, 0, 2.34363 )
+
+[node name="kitchenCabinetCornerRound" parent="Kitchen Desk" instance=ExtResource( 6 )]
+transform = Transform( -2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -7.368, 0, -0.0225735 )
+
+[node name="kitchenCabinetUpperCorner" parent="Kitchen Desk" instance=ExtResource( 7 )]
+transform = Transform( -2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -6.04286, 0.15423, 3.29339 )
+
+[node name="kitchenCabinetUpperCorner2" parent="Kitchen Desk" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 2.31, 0.138503, 3.36831 )
+
+[node name="kitchenBar" parent="Kitchen Desk" instance=ExtResource( 10 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -2.17724, -0.0145611, 1.99896 )
+
+[node name="kitchenCabinetCornerInner" parent="Kitchen Desk" instance=ExtResource( 11 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 1.25151, -0.00608997, 2.35144 )
+
+[node name="Top Desk" type="Spatial" parent="Kitchen Desk"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52543, 5.52725, -0.599599 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="kitchenCabinetUpperDouble" parent="Kitchen Desk/Top Desk" instance=ExtResource( 12 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -2.1429, -1.24033, 0.599599 )
+
+[node name="kitchenCabinetUpperDouble2" parent="Kitchen Desk/Top Desk" instance=ExtResource( 12 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -0.0393639, -1.24033, 0.599599 )
+
+[node name="kitchenCabinetUpperCorner" parent="Kitchen Desk/Top Desk" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -3.1089, -1.24033, 0.599599 )
+
+[node name="kitchenCabinetUpperCorner2" parent="Kitchen Desk/Top Desk" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 5, 0, 0, 0, 5, 3.17641, -1.24033, 0.599599 )
+
+[node name="apple" parent="Kitchen Desk/Top Desk" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39364, -0.130772, 0.451226 )
+
+[node name="banana" parent="Kitchen Desk/Top Desk" instance=ExtResource( 14 )]
+transform = Transform( -0.77458, 0, 0.632476, 0, 1, 0, -0.632476, 0, -0.77458, -2.64838, -0.131329, 0.443045 )
+
+[node name="bottleKetchup" parent="Kitchen Desk/Top Desk" instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82675, -1.10633, 0.409662 )
+
+[node name="bottleMusterd" parent="Kitchen Desk/Top Desk" instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.61457, -1.10633, 0.336201 )
+
+[node name="bottleOil" parent="Kitchen Desk/Top Desk" instance=ExtResource( 13 )]
+transform = Transform( 0.000750498, 0, 1, 0, 1, 0, -1, 0, 0.000750498, -2.31764, -1.10633, 0.49562 )
+
+[node name="can" parent="Kitchen Desk/Top Desk" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.86645, -0.131329, 0.329481 )
+
+[node name="canOpen" parent="Kitchen Desk/Top Desk" instance=ExtResource( 17 )]
+transform = Transform( 0.732329, 0, -0.680951, 0, 1, 0, 0.680951, 0, 0.732329, 2.57244, -0.131329, 0.436481 )
+
+[node name="cherries" parent="Kitchen Desk/Top Desk" instance=ExtResource( 20 )]
+transform = Transform( -0.271961, 0, 0.962308, 0, 1, 0, -0.962308, 0, -0.271961, 2.88492, -1.10633, 0.453837 )
+
+[node name="croissant" parent="Kitchen Desk/Top Desk" instance=ExtResource( 19 )]
+transform = Transform( -0.705389, 0, 0.70882, 0, 1, 0, -0.70882, 0, -0.705389, 2.85054, -1.10633, 0.220072 )
+
+[node name="fries" parent="Kitchen Desk/Top Desk" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.46815, -1.10633, 0.463634 )
+
+[node name="broccoli" parent="Kitchen Desk" instance=ExtResource( 28 )]
+transform = Transform( -0.570531, 0.730325, -0.375658, 0.788043, 0.61562, 0, 0.231263, -0.296035, -0.926758, -6.38768, 1.27339, 2.65235 )
+
+[node name="cabbage" parent="Kitchen Desk" instance=ExtResource( 29 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.34554, 1.26323, 3.03538 )
+
+[node name="carrot" parent="Kitchen Desk" instance=ExtResource( 30 )]
+transform = Transform( -4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, -6.05543, 1.29754, 2.79163 )
+
+[node name="bowl5" parent="Kitchen Desk" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.40337, 0.28823, 2.71389 )
+
+[node name="tajine" parent="Kitchen Desk" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.63064, 0.293241, 2.88294 )
+
+[node name="watermelon" parent="Kitchen Desk" instance=ExtResource( 31 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54636, 1.2475, 2.80497 )
+
+[node name="wineRed" parent="Kitchen Desk" instance=ExtResource( 33 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03144, 1.2475, 2.81084 )
+
+[node name="wineWhite" parent="Kitchen Desk" instance=ExtResource( 34 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09943, 1.2691, 3.10003 )
+
+[node name="makiRoe" parent="Kitchen Desk" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.66104, 1.2475, 3.13378 )
+
+[node name="honey" parent="Kitchen Desk" instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.74902, 0.28823, 3.05362 )
+
+[node name="Box 1" parent="." instance=ExtResource( 38 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.304975, 2.0574, 1.47995 )
+script = ExtResource( 69 )
+
+[node name="Area" type="Area" parent="Box 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0880537, 0, -0.0604997 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Box 1/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0776228, 0.121222, 0.0612262 )
+shape = SubResource( 14 )
+
+[node name="1" type="Spatial" parent="Box 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.278727, 0, 0.0999356 )
+
+[node name="2" type="Spatial" parent="Box 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.278727, 0, -0.258885 )
+
+[node name="3" type="Spatial" parent="Box 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1002, 0, -0.258885 )
+
+[node name="4" type="Spatial" parent="Box 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1002, 0, 0.0907386 )
+
+[connection signal="button_up" from="UI/Open Requirements" to="UI" method="_on_open_requirements_button_up"]
+[connection signal="button_up" from="UI/Requirements Panel/Close Requirements" to="UI" method="_on_close_requirements_button_up"]
+[connection signal="button_up" from="UI/Submit Button" to="UI" method="_on_submit_button_up"]
+[connection signal="button_up" from="UI/Foods Panel/Forward" to="UI/Foods Panel" method="_on_Back_button_up"]
+[connection signal="button_up" from="UI/Foods Panel/Back" to="UI/Foods Panel" method="_on_Forward_button_up"]
+[connection signal="input_event" from="Box 1/Area" to="." method="_on_Box1_Area_input_event"]

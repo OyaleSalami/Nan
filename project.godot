@@ -12,6 +12,7 @@ config_version=4
 
 config/name="Share"
 run/main_scene="res://Scenes/Menu.tscn"
+boot_splash/bg_color=Color( 0.501961, 0.392157, 0.25098, 1 )
 config/icon="res://icon.png"
 
 [display]
@@ -19,12 +20,20 @@ config/icon="res://icon.png"
 window/size/width=1280
 window/size/height=720
 window/size/resizable=false
-window/size/test_width=640
-window/size/test_height=360
+window/size/test_width=1280
+window/size/test_height=720
 window/dpi/allow_hidpi=true
 mouse_cursor/custom_image="res://Textures/image17.png"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[memory]
+
+limits/message_queue/max_size_kb=8192
+
+[network]
+
+limits/debugger_stdout/max_messages_per_frame=20
 
 [physics]
 

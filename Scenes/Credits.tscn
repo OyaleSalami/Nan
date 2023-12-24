@@ -59,30 +59,30 @@ use_filter = true
 extra_spacing_char = 10
 font_data = ExtResource( 44 )
 
-[sub_resource type="DynamicFont" id=10]
+[sub_resource type="DynamicFont" id=3]
 size = 50
 outline_size = 2
-outline_color = Color( 1, 0.8, 0, 1 )
+outline_color = Color( 0.952941, 0.470588, 0.156863, 1 )
 use_mipmaps = true
 use_filter = true
 extra_spacing_char = 1
 font_data = ExtResource( 25 )
 
-[sub_resource type="StyleBoxTexture" id=12]
+[sub_resource type="StyleBoxTexture" id=4]
 texture = ExtResource( 47 )
 region_rect = Rect2( 0, 0, 38, 36 )
 modulate_color = Color( 1, 1, 1, 0.784314 )
 
-[sub_resource type="StyleBoxTexture" id=13]
+[sub_resource type="StyleBoxTexture" id=5]
 texture = ExtResource( 47 )
 region_rect = Rect2( 0, 0, 38, 36 )
 modulate_color = Color( 1, 1, 1, 0.501961 )
 
-[sub_resource type="StyleBoxTexture" id=11]
+[sub_resource type="StyleBoxTexture" id=6]
 texture = ExtResource( 47 )
 region_rect = Rect2( 0, 0, 38, 36 )
 
-[sub_resource type="SphereMesh" id=9]
+[sub_resource type="SphereMesh" id=7]
 
 [node name="Menu" type="Spatial"]
 script = ExtResource( 24 )
@@ -121,11 +121,14 @@ __meta__ = {
 anchor_top = 0.332
 anchor_right = 1.0
 anchor_bottom = 0.722
-margin_top = -0.0400085
-margin_bottom = 0.159973
-custom_fonts/font = SubResource( 10 )
-text = "Programmer - Oyale Salami
-Game Design - Oyale Salami"
+margin_top = -0.0399933
+margin_bottom = 100.16
+custom_fonts/font = SubResource( 3 )
+text = "Programming *Game Design *Music
+Oyale Salami
+
+Special Thanks
+nan"
 align = 1
 valign = 1
 uppercase = true
@@ -140,9 +143,9 @@ margin_left = -50.0
 margin_top = 10.0
 margin_right = -10.0
 margin_bottom = 50.0
-custom_styles/hover = SubResource( 12 )
-custom_styles/pressed = SubResource( 13 )
-custom_styles/normal = SubResource( 11 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -162,7 +165,7 @@ transform = Transform( 1, 0, 0, 0, 0.801515, 0.597975, 0, -0.597975, 0.801515, 0
 
 [node name="Sphere" type="MeshInstance" parent="Anchor"]
 transform = Transform( 9.99862, -0.161443, -0.0391246, 0.161133, 9.9984, -0.0782492, 0.0403816, 0.077608, 9.99962, 0, 0, -13.0147 )
-mesh = SubResource( 9 )
+mesh = SubResource( 7 )
 material/0 = null
 
 [node name="bread" parent="Anchor/Sphere" instance=ExtResource( 2 )]
