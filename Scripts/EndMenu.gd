@@ -3,11 +3,6 @@ extends Spatial
 var xRotSpeed = 0
 var yRotSpeed = 0
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-
-#Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	xRotSpeed = clamp(xRotSpeed, -1, 1)
 	yRotSpeed = clamp(yRotSpeed, -1, 1)
@@ -19,12 +14,10 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		xRotSpeed = event.relative.x
 		yRotSpeed = event.relative.y
-
-func _on_play_button_up():
-	get_tree().change_scene("res://Scenes/Tutorial.tscn")
-
-func _on_credit_button_up():
-	get_tree().change_scene("res://Scenes/Credits.tscn")
-
-func _on_exit_button_up():
+		
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	get_node("UI/Label").text += String(int(GameManager.store))
+	
+func _on_Exit_Button_button_up():
 	get_tree().change_scene("res://Scenes/Menu.tscn")

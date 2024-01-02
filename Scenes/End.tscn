@@ -23,7 +23,7 @@
 [ext_resource path="res://Models/Food Models/corn.glb" type="PackedScene" id=21]
 [ext_resource path="res://Models/Food Models/cornDog.glb" type="PackedScene" id=22]
 [ext_resource path="res://Models/Food Models/cupcake.glb" type="PackedScene" id=23]
-[ext_resource path="res://Scripts/Menu.gd" type="Script" id=24]
+[ext_resource path="res://Scripts/EndMenu.gd" type="Script" id=24]
 [ext_resource path="res://Fonts/kenvector_future_thin.ttf" type="DynamicFontData" id=25]
 [ext_resource path="res://Models/Food Models/banana.glb" type="PackedScene" id=26]
 [ext_resource path="res://Models/Food Models/avocadoHalf.glb" type="PackedScene" id=27]
@@ -109,7 +109,7 @@ anchor_bottom = 1.301
 margin_top = 0.053997
 margin_bottom = 0.0539856
 custom_fonts/font = SubResource( 2 )
-text = "Credits"
+text = "Game Over"
 align = 1
 valign = 1
 uppercase = true
@@ -124,11 +124,8 @@ anchor_bottom = 0.722
 margin_top = -0.0399933
 margin_bottom = 100.16
 custom_fonts/font = SubResource( 3 )
-text = "Programming::Game Design 
-Oyale Salami
-
-Special Thanks
-naan"
+text = "Your score was
+"
 align = 1
 valign = 1
 uppercase = true
@@ -330,4 +327,4 @@ transform = Transform( 0.4, 0, 0, 0, -0.203845, 0.344162, 0, -0.344162, -0.20384
 [node name="burgerCheeseDouble2" parent="Anchor/Sphere" instance=ExtResource( 6 )]
 transform = Transform( -0.331954, 0.223173, 0, -0.223173, -0.331954, 0, 0, 0, 0.4, 0.495768, -0.833937, -0.076357 )
 
-[connection signal="button_up" from="UI/Exit Button" to="." method="_on_exit_button_up"]
+[connection signal="button_up" from="UI/Exit Button" to="." method="_on_Exit_Button_button_up"]

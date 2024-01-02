@@ -13,10 +13,11 @@ config_version=4
 config/name="Share"
 run/main_scene="res://Scenes/Menu.tscn"
 boot_splash/bg_color=Color( 0.501961, 0.392157, 0.25098, 1 )
-config/icon="res://icon.png"
+config/icon="res://Untitled.png"
 
 [autoload]
 
+GlobalAudiPlayer="*res://Fonts/AudioStreamPlayer.tscn"
 GameManager="*res://Scripts/game_manager.gd"
 
 [display]

@@ -1,5 +1,8 @@
 extends Node
 
+var score = 0
+var store = 0
+
 # C-cake | M-meat | V-vegetable | D-drink | F-fruits 
 var foodType = String()
 var food
